@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Çizimax - ibrahimodev.tk</title>
+  </head>
+  <body>
+    <div class="cizimalani">
+      <canvas id="draw"></canvas>
+    </div>
+      <button id="panel"><i class="fas fa-bars"></i></button>
+    <div id="araclar" class="araclar aktif">
+      <h3><img src="/cizimax/logo-png.png" alt="ÇiziMax" width="200" height="190"></h3>
+      <button id="temizle">Temizle</button>
+      <button id="silgi">Silgi</button>
+      <h4>Çizgi Boyutu</h4>
+      <input
+        onchange="range()"
+        type="range"
+        value="50"
+        name="cizgi"
+        id="cizgi"
+        min="5"
+        max="100"
+      />
+      <h4>Fırça Rengi</h4>
+      <input
+        oninput="color()"
+        type="color"
+        name="renk"
+        id="renk"
+        value="#ff0000"
+      />
+      <button><a href="/cizimax/rahatlamaseasni.html">Rahatlama Seansı</a></button>
+    </div>
+    <div class="hata">
+      <h1>Mobil Uyumlu Değildir.</h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
